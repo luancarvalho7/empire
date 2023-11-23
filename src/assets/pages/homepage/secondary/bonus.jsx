@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Scrollbar } from '../../../components/scrollbar/scrollbar'
 import './bonus.css'
-export function Bonus({ img }) {
+export function Bonus({ img, affLink }) {
 
 
     const [iFrameOn, setiFrameOn] = useState(false)
@@ -23,9 +23,9 @@ export function Bonus({ img }) {
             <div className="imgheaderBlock"></div>
 
             <div className="bonusContent borderSpacing">
-                <img src={"https://i.postimg.cc/3RW6RXxX/bullsbet.webp"} className="bonusHouse"></img>
+                <img src={"https://storage.bet7k.com/bet7k/images/1675781173_logo.svg"} className="bonusHouse"></img>
                 <div className="bh-txt">
-                    <h3 className='housetitle txt-gradient'>BullsBet</h3>
+                    <h3 className='housetitle txt-gradient'>Bet 7K</h3>
                     <h2>Única plataforma onde os
                         analistas trabalham e o BUG Funciona!</h2>
                 </div>
@@ -51,7 +51,7 @@ export function Bonus({ img }) {
                         dentro do nosso sistema.</p>
                 </div>
             </div>
-            <iframe src={"https://go.aff.bullsbetaffiliate.com/50v6gzg5"} id='bonusiFrame' className={iFrameOn ? "" : "if-disabled"}></iframe>
+            <iframe src={affLink} id='bonusiFrame' className={iFrameOn ? "" : "if-disabled"}></iframe>
 
         </section >
     )
